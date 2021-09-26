@@ -3,3 +3,81 @@ font-family: 'Josefin Slab', serif;
 font-family: 'Overlock', cursive;
 font-family: 'Poiret One', cursive; 
 */
+
+/* ----------- VARIABLES --------------*/
+:root {
+  --header-height: 3rem;
+  /*-------------- COLOR --------------*/
+  --hue-color: 274;
+  /*first-color: hsl(var(--hue-color), 25%, 29%);*/
+  --first-color: hsl(326, 25%, 29%);
+  --first-color-second: hsl(328, 30%, 46%);
+  --fist-color-alt: hsl(344, 51%, 61%);
+  --first-color-lighter: hsl(16, 100%, 69%);
+
+  --title-color: hsl(20, 93%, 56%);
+  --text-color: hsl(327, 27%, 8%);
+  --mainText: hsl(330, 30%, 4%);
+  --text-color-lighter: hsl(328, 30%, 72%);
+  --input-color: hsl(344, 51%, 82%);
+  --body-color: hsl(22, 88%, 90%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(331, 30%, 54%);
+  --scroll-thumb-color: hsl(332, 30%, 64%);
+  --gradient-color: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(92, 55, 76, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  /* ---------------- FONT AND TYPOGRAPHY -------------*/
+  --gullible-font: 'Forum', cursive;
+  --body-font: 'Josefin Slab', serif;
+  --overlock-font: 'Overlock', cursive;
+  --poiret-one-font: 'Poiret One', cursive;
+
+  /*1rem = 16px, .5rem = 8px */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 14px;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*--------------- FONT WEIGHT ----------------*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* ---------------------- MARGIN SIZE - BOTTOM------------ */
+  /*.25rem = 4px, .5rem = 8px, 1rem = 16px, .75rem = 12px*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-25: 1.25rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* --------------------- Z-INDEX ---------------------*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* FONT SIZE FOR LARGER DEVICE */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 16px;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
